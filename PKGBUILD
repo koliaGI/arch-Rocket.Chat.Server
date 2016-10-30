@@ -13,14 +13,14 @@ install="${pkgname}.install"
 source=("https://rocket.chat/releases/${pkgver}/download"
         "rocketchat-server.conf"
         "rocketchat-server.service"
-				"rocketchat-server.install"
-				"rocketchat-server.sh"
+        "rocketchat-server.install"
+        "rocketchat-server.sh"
        )
 sha512sums=("3ee7cf664ecaae69f85c0286d558ebb15e5e5a79c17d0f91377a0a28eb749183ea065d8fd912929385b6a54ada57725a6fed71c6aecd5bc87667447d85ff2b11"
             "87daf10e55224ceefcbc2227dd2c531a4af1b68a3089f6a6893f980e7232bb15bf96895ee4df7400ed7195c273d5e07c8dab34af0f38b977504ffb5831400fde"
-						"75d1aee01a1190d68a41ba4362f18117fba70289666be8c1dfd117d2b96aeb8c80d949be924b0e79ed711f85a98eff608bdc7b78ea0d4fb6d2e9a935cac13ac1"
-						"05de246127049d5f6eaff52f2b047a93e7e366a905edbe2a29a96bb962f5215cb0cb0cac31bf1d41873d88a71df67456f06fee1e944d7095e372265364ba33f6"
-						"70262c7cf95616438f16e08e7ae1cac3fdae236f690abc9b20a7e714f9f0948308ba3b3241b683d325b2b68ad7ef8b46df6fc1cccb6adeaafab60d4cff710cb4"
+            "75d1aee01a1190d68a41ba4362f18117fba70289666be8c1dfd117d2b96aeb8c80d949be924b0e79ed711f85a98eff608bdc7b78ea0d4fb6d2e9a935cac13ac1"
+            "05de246127049d5f6eaff52f2b047a93e7e366a905edbe2a29a96bb962f5215cb0cb0cac31bf1d41873d88a71df67456f06fee1e944d7095e372265364ba33f6"
+            "70262c7cf95616438f16e08e7ae1cac3fdae236f690abc9b20a7e714f9f0948308ba3b3241b683d325b2b68ad7ef8b46df6fc1cccb6adeaafab60d4cff710cb4"
            )
 
 package() {
