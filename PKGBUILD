@@ -29,7 +29,7 @@ package() {
 	cp -dr --no-preserve=ownership "${srcdir}/bundle/"* "${pkgdir}/usr/share/${pkgname}"
 
 	msg2 "Install dependencies"
-  npm install --silent --depth 0 --prefix "${pkgdir}/usr/share/${pkgname}/programs/server"
+	npm install --silent --depth 0 --prefix "${pkgdir}/usr/share/${pkgname}/programs/server"
 
 	msg2 "Install executable"
 	install -D -m 755 ${pkgname}.sh "${pkgdir}/usr/bin/${pkgname}.sh"
