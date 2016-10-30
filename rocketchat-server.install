@@ -1,0 +1,12 @@
+pre_install() {
+	if ! grep -q "^rocketchat" /etc/group &> /dev/null ; then
+		groupadd -r rocketchat &> /dev/null
+	fi
+	if ! grep -q "^rocketchat:" /etc/passwd &> /dev/null ; then
+		useradd -r -s /usr/bin/nologin -g rocketchat rocketchat &> /dev/null
+	fi
+}
+
+post_install() {
+	chown -R rocketchat:rocketchat /etc/rocketchat-server
+}

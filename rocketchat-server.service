@@ -1,0 +1,16 @@
+[Unit]
+Description=Rocket.Chat server
+After=network.target
+
+[Service]
+Type=simple
+User=rocketchat
+Group=rocketchat
+ExecStart=/usr/bin/rocketchat-server.sh
+
+Restart=always
+RestartSec=10
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
