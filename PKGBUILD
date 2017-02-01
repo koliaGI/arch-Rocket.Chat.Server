@@ -26,6 +26,7 @@ package() {
 	msg2 "Install rocket.chat"
 	install -d -m 755 "${pkgdir}/usr/share/${pkgname}"
 	cp -dr --no-preserve=ownership "${srcdir}/bundle/"* "${pkgdir}/usr/share/${pkgname}"
+	cp -d --no-preserve=ownership "${srcdir}/bundle/.node_version.txt" "${pkgdir}/usr/share/${pkgname}"
 
 	msg2 "Install dependencies"
 	npm install --silent --depth 0 --prefix "${pkgdir}/usr/share/${pkgname}/programs/server"
