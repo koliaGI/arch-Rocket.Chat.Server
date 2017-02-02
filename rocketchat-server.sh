@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function export-config() {
+function import-config() {
 	local config="/etc/rocketchat-server/rocketchat-server.conf"
 
 	if [[ ! -r "${config}" ]] ; then
@@ -18,7 +18,7 @@ function export-config() {
 }
 
 function main() {
-	export-config
+	import-config
 
 	echo "Starting rocketchat...done"
 	node "/usr/share/rocketchat-server/main.js"
