@@ -1,7 +1,7 @@
 # Maintainer: 0x0049 <dev@0x0049.me>
 
 pkgname=rocketchat-server
-pkgver=0.52.0
+pkgver=0.54.2
 pkgrel=1
 pkgdesc="An open source web chat platform"
 arch=("any")
@@ -16,7 +16,7 @@ source=("https://rocket.chat/releases/${pkgver}/download"
         "rocketchat-server.install"
         "rocketchat-server.sh"
        )
-sha512sums=('b1bb6e0d2f6e261f2d14c16578421292f75ca16a353b76403390be7e07bb518e2168e1a11b33ddbafe628e7365c3c3bdbfd5165c21f582275e4ae66d5906c8c9'
+sha512sums=('85b7e73291d726c4670210b8d36b41d18838e60f7f90e8161ea3e4d5b66af2b3193270eea432d48a76af0fc4e2e07f17312888aff8cc495258ee4f1268877bea'
             '87daf10e55224ceefcbc2227dd2c531a4af1b68a3089f6a6893f980e7232bb15bf96895ee4df7400ed7195c273d5e07c8dab34af0f38b977504ffb5831400fde'
             '75d1aee01a1190d68a41ba4362f18117fba70289666be8c1dfd117d2b96aeb8c80d949be924b0e79ed711f85a98eff608bdc7b78ea0d4fb6d2e9a935cac13ac1'
             'd35caf6b2c1094f4a6ad52f11339ea8020f79e602082751bfb1a68a19e25c7eb20108f26547d2fdab3bd6b23fe30a6c959b1bae6408956b375377356a48b691c'
