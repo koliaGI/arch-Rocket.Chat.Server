@@ -6,6 +6,7 @@ After=network.target
 Type=simple
 User=rocketchat
 Group=rocketchat
+SyslogIdentifier=rocketchat
 ExecStart=/usr/bin/rocketchat-server.sh
 
 Restart=always
